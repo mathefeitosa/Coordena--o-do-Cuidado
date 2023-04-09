@@ -2,7 +2,7 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import User
 
-from ..utils.constants import STATE_CHOICES, USER_TYPES
+from utils.constants import STATE_CHOICES, USER_TYPES
 
 
 
@@ -25,7 +25,8 @@ class Profile(models.Model):
       verbose_name='Tipo de usuário',
       blank=False,
       null=False,
-      editable=True
+      editable=True,
+      default='PAT'
   )
   full_name = models.CharField(
       max_length=200,

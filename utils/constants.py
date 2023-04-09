@@ -28,7 +28,7 @@ STATE_CHOICES = (
   ("TO", "Tocantins"),
 )
 USER_TYPES = (
-  ('Médico', 'MED'),
-  ('Regulador', 'REG'),
-  ('Paciente', 'PAT')    
+  ('MED', 'Médico'),
+  ('REG', 'Regulador'),
+  ('PAT', 'Paciente')    
 )
