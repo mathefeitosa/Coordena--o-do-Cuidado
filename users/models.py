@@ -4,8 +4,6 @@ from django.contrib.auth.models import User
 
 from utils.constants import STATE_CHOICES, USER_TYPES
 
-
-
 class Profile(models.Model):
   id = models.UUIDField(
     default=uuid.uuid4,

@@ -32,3 +32,7 @@ USER_TYPES = (
   ('REG', 'Regulador'),
   ('PAT', 'Paciente')    
 )
+SEX_CHOICE = (
+  ('M', 'Homem'),
+  ('W', 'Mulher')  
+)
