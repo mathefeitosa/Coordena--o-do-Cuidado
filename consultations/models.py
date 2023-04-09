@@ -46,7 +46,7 @@ class Cid10(models.Model):
   def __str__(self):
     return f'{self.letter}{self.number}|{self.description}|{self.sex}|{self.cause_death}'
 
-class consultation(models.Model):
+class Consultation(models.Model):
   id = models.UUIDField(
     default=uuid.uuid4,
     unique=True,
