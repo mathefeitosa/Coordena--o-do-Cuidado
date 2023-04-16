@@ -30,7 +30,7 @@ class Profile(models.Model):
       max_length=200,
       verbose_name='Nome completo',
   )
-  full_name = models.CharField(
+  email = models.CharField(
       max_length=200,
       verbose_name='Email',
   )
@@ -65,3 +65,6 @@ class Profile(models.Model):
     editable=False,
     verbose_name='Data de edição'
   )
+  def __str__(self) -> str:
+    text = f'{self.full_name} - CRM/{self.crm_state} {self.crm_number}'
+    return text
